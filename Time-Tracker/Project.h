@@ -13,5 +13,16 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSArray *entries;
 
+- (NSDictionary *)projectDictionary;
+- (id)initWithDictionary:(NSDictionary *)dictionary;
+
+- (NSString *)projectTime;
+
+- (void)startNewEntry;
+- (void)endCurrentEntry;
+
+
+- (void)synchronize;
+
 
 @end

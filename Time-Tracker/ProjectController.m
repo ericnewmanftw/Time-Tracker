@@ -7,6 +7,7 @@
 //
 
 #import "ProjectController.h"
+#import "Project.h"
 
 static NSString * const projectListKey = @"projectList";
 
@@ -41,11 +42,29 @@ static NSString * const projectListKey = @"projectList";
 }
 
 
--(void)addProject:{
+-(void)addProject:(Project *)project {
     
+    if (!project) {
+        return;
+    }
+    
+    NSMutableArray *mutableProject = [[NSMutableArray alloc] initWithArray:self.projects];
+    [mutableProject addObject:project];
+    
+    self.projects = mutableProject;
 }
 
--(void)removeProject:{
+-(void)removeProject:(Project *)project {
+    
+    if (!project) {
+        return;
+    }
+    
+    NSMutableArray *mutableProject = self.projects.mutableCopy;
+    [mutableProject removeObject:project];
+    
+    self.projects = mutableProject;
+    
     
 }
 
