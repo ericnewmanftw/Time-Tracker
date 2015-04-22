@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--List View Controller-->
@@ -28,7 +29,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="prR-LM-fsb"/>
+                    <navigationItem key="navigationItem" id="prR-LM-fsb">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="grw-GH-yho">
+                            <connections>
+                                <segue destination="pgC-XC-F83" kind="show" id="DuF-Gy-uRZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="e4R-5u-dvd" id="Y6C-n4-CJ5"/>
                     </connections>
@@ -37,6 +44,63 @@
                 <customObject id="8jX-Lu-Alu" customClass="TTListTableViewDatasource"/>
             </objects>
             <point key="canvasLocation" x="-8" y="1171"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="5LY-Ic-8Vf">
+            <objects>
+                <viewController id="pgC-XC-F83" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VNB-vV-1cn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hut-pa-OGG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="96g-BG-OpT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b93-ih-ws9">
+                                <rect key="frame" x="16" y="145" width="568" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="qGR-nx-qkj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCl-ts-CHp">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="DuG-OJ-8Ec"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="VnU-zp-Sn2"/>
+                                    <barButtonItem title="Item" id="Bxj-TJ-Iob"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5Ar-wD-BpB"/>
+                                    <barButtonItem title="Item" id="tYi-4o-vGb"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hEY-OI-4X0"/>
+                                    <barButtonItem title="Item" id="61A-10-6bx"/>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N6h-4S-mz3">
+                                <rect key="frame" x="16" y="107" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MCl-ts-CHp" firstAttribute="centerX" secondItem="b93-ih-ws9" secondAttribute="centerX" id="BiF-aa-eke"/>
+                            <constraint firstItem="b93-ih-ws9" firstAttribute="leading" secondItem="96g-BG-OpT" secondAttribute="leadingMargin" id="JJU-FX-sXh"/>
+                            <constraint firstItem="N6h-4S-mz3" firstAttribute="leading" secondItem="b93-ih-ws9" secondAttribute="leading" id="LKo-Sf-gml"/>
+                            <constraint firstItem="b93-ih-ws9" firstAttribute="top" secondItem="N6h-4S-mz3" secondAttribute="bottom" constant="8" symbolic="YES" id="ayc-bL-oVD"/>
+                            <constraint firstItem="b93-ih-ws9" firstAttribute="centerY" secondItem="96g-BG-OpT" secondAttribute="centerY" id="cct-Nn-CoM"/>
+                            <constraint firstItem="MCl-ts-CHp" firstAttribute="bottom" secondItem="Hut-pa-OGG" secondAttribute="top" id="jry-Sb-NRF"/>
+                            <constraint firstItem="MCl-ts-CHp" firstAttribute="leading" secondItem="96g-BG-OpT" secondAttribute="leading" id="kDy-wZ-Ur3"/>
+                            <constraint firstItem="N6h-4S-mz3" firstAttribute="trailing" secondItem="b93-ih-ws9" secondAttribute="trailing" id="lb2-iv-G0q"/>
+                            <constraint firstItem="b93-ih-ws9" firstAttribute="trailing" secondItem="96g-BG-OpT" secondAttribute="trailingMargin" id="onO-H1-5k5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Sc-Lv-0Gl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="1171"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h5q-Un-fOp">

@@ -25,6 +25,8 @@
 		9BF98BA91AE2E01E007A79E0 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF98BA81AE2E01E007A79E0 /* Entry.m */; };
 		9BF98BAC1AE2E061007A79E0 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF98BAB1AE2E061007A79E0 /* Project.m */; };
 		9BF98BAF1AE2E5BE007A79E0 /* ProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF98BAE1AE2E5BE007A79E0 /* ProjectController.m */; };
+		9BFA77641AE8410600B0677E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA77621AE8410600B0677E /* DetailViewController.m */; };
+		9BFA77651AE8410600B0677E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BFA77631AE8410600B0677E /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		9BF98BAB1AE2E061007A79E0 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		9BF98BAD1AE2E5BE007A79E0 /* ProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectController.h; sourceTree = "<group>"; };
 		9BF98BAE1AE2E5BE007A79E0 /* ProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectController.m; sourceTree = "<group>"; };
+		9BFA77611AE8410600B0677E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		9BFA77621AE8410600B0677E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9BFA77631AE8410600B0677E /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,9 @@
 				9BF98BA41AE2DAA3007A79E0 /* ListViewController.h */,
 				9BF98BA51AE2DAA3007A79E0 /* ListViewController.m */,
 				9BF98B9A1AE2D755007A79E0 /* MainStoryboard.storyboard */,
+				9BFA77611AE8410600B0677E /* DetailViewController.h */,
+				9BFA77621AE8410600B0677E /* DetailViewController.m */,
+				9BFA77631AE8410600B0677E /* DetailViewController.xib */,
 				9BF98BA11AE2D7FA007A79E0 /* TTListTableViewDatasource.h */,
 				9BF98BA21AE2D7FA007A79E0 /* TTListTableViewDatasource.m */,
 				9BF98BA71AE2E01E007A79E0 /* Entry.h */,
@@ -251,6 +259,7 @@
 				9BF98B9B1AE2D755007A79E0 /* MainStoryboard.storyboard in Resources */,
 				7116F78019421700006C8F06 /* InfoPlist.strings in Resources */,
 				7116F78819421700006C8F06 /* Images.xcassets in Resources */,
+				9BFA77651AE8410600B0677E /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +281,7 @@
 				9BF98BA31AE2D7FA007A79E0 /* TTListTableViewDatasource.m in Sources */,
 				9BF98BA91AE2E01E007A79E0 /* Entry.m in Sources */,
 				7116F78619421700006C8F06 /* TTAppDelegate.m in Sources */,
+				9BFA77641AE8410600B0677E /* DetailViewController.m in Sources */,
 				9BF98BAF1AE2E5BE007A79E0 /* ProjectController.m in Sources */,
 				9BF98BAC1AE2E061007A79E0 /* Project.m in Sources */,
 				9BF98BA61AE2DAA3007A79E0 /* ListViewController.m in Sources */,
